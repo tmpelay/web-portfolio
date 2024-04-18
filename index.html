@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <a href="#nav" class="up-button"><i class="bx bx-chevron-up"></i></a>
+    <header id="nav" class="header">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Sobre mi</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Habilidades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Proyectos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contactame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="home"></main>
+    <section id="about" class="section">
+      <h2 class="section__title">Sobre Mi</h2>
+      <div class="section__wrapper">
+        <div class="section__left">
+          <div class="section__icon">
+            <img src="assets/argentina.png" alt="Argentina" />
+            <p class="icon__text">
+              <span class="sction__icon-medium">Argentina</span>
+            </p>
+          </div>
+          <div class="section__icon">
+            <i class="icon bx bx-map"></i>
+            <p class="icon__text">
+              <span class="section__icon-medium"
+                >Concepcion del Uruguay, Entre Rios</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="section__divider"></div>
+        <div class="section__right">
+          <div class="about__nav-container">
+            <input
+              class="about__radio"
+              type="radio"
+              name="about"
+              id="profile"
+              checked
+            />
+            <label class="about__nav-item" for="profile">Perfil</label>
+            <input class="about__radio" type="radio" name="about" id="story" />
+            <label class="about__nav-item" for="story">Mi historia</label>
+            <div class="about__profile-text">
+              <p class="important-text">
+                Hola, soy Tomás Malleret, un entusiasta de la programación
+                nacido en Buenos Aires, Argentina, y actualmente resido en
+                Concepción del Uruguay, Entre Ríos.
+              </p>
+              <p>
+                Me he sumergido en el mundo de la programación desde muy joven,
+                guiándome por mi cuenta. Soy un programador web Front-End con
+                aspiraciones a ser Full-Stack. Mi pasión por esta profesión me
+                ha llevado a desarrollar un profundo entendimiento del campo. En
+                este momento, estoy buscando experiencia real para iniciar mi
+                carrera profesional. Destaco mi capacidad para especializarme
+                rápidamente en cualquier tecnología que se me presente, gracias
+                a los años dedicados a aprender y desarrollar mi flexibilidad en
+                este ámbito.
+              </p>
+            </div>
+            <div class="about__story-text">
+              <p class="important-text">
+                Nací el 26 de junio de 2004 en Buenos Aires, Argentina, pero mi
+                familia se mudó a Entre Ríos, allí estudié en la Escuela de
+                Educación Técnica N°2 "Francisco Ramírez", donde nació mi pasión
+                por la programación. Comencé a programar por mi cuenta a los 13
+                años, inicialmente creando videojuegos. Con el tiempo, me
+                adentré en la programación lógica con Java, lo que desarrolló mi
+                pensamiento lógico como programador.
+              </p>
+              <p>
+                Aprendí Programación Orientada a Objetos y diversas áreas como
+                la programación web, donde conocí HTML, CSS y JavaScript, y más
+                tarde aprendí tecnologías como NodeJS y ReactJS para desarrollar
+                aplicaciones Full-Stack. También exploré bases de datos SQL y
+                noSQL y creé mis primeras APIs. Durante los últimos 7 años, he
+                explorado nichos como Python, Inteligencia Artificial, C++, y
+                programación de gráficos en tres dimensiones con OpenGL y
+                Vulkan.
+              </p>
+              <p>
+                Hoy, con 20 años, siento que la programación es una extensión de
+                mí mismo, aunque sé que aún tengo mucho por aprender y estoy
+                emocionado por adquirir más experiencia en el futuro.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <h2 class="section__title">Mis Habilidades</h2>
+      <div class="section__wrapper">
+        <div class="section__left">
+          <div class="section__icon">
+            <img src="assets/spain.png" alt="Spanish" />
+            <p class="icon__text">
+              <span class="sction__icon-medium">Español</span><br />
+              Nativo
+            </p>
+          </div>
+          <div class="section__icon">
+            <img src="assets/united-states.png" alt="English" />
+            <p class="icon__text">
+              <span class="sction__icon-medium">Ingles</span><br />
+              Basico / Intermedio
+            </p>
+          </div>
+          <div class="section__icon">
+            <img src="assets/japan.png" alt="Japan" />
+            <p class="icon__text">
+              <span class="sction__icon-medium">Japones</span><br />
+              Principiante
+            </p>
+          </div>
+        </div>
+        <div class="section__divider"></div>
+        <div class="section__right">
+          <div class="skills__nav-container">
+            <input
+              class="skills__radio"
+              type="radio"
+              name="skills"
+              id="web"
+              checked
+            />
+            <label class="skills__nav-item" for="web">Web</label>
+            <div class="skills__web">
+              <div class="skills__web-basic">
+                <div class="skill__wrapper">
+                  <img src="assets/html5-icon.png" alt="HTML icon" />
+                  <p>HTML</p>
+                </div>
+                <div class="skill__wrapper">
+                  <img src="assets/css-icon.png" alt="CSS icon" />
+                  <p>CSS</p>
+                </div>
+                <div class="skill__wrapper">
+                  <img src="assets/javascript-icon.png" alt="JavaScript icon" />
+                  <p>JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__other">
+            <h2 class="skills__other-title">Otras Habilidades</h2>
+            <div class="skills__other-icons">
+              <div class="skill__wrapper">
+                <img src="assets/git-icon.png" alt="Git icon" />
+                <p>Git</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <h2 class="section__title">Mis Proyectos</h2>
+      <div class="section__wrapper">
+        <div class="section__left"></div>
+        <div class="section__divider"></div>
+        <div class="section__right"></div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2 class="section__title">Contactame</h2>
+      <div class="section__wrapper">
+        <div class="section__left">
+          <div class="section__icon">
+            <i class="icon bx bx-mobile"></i>
+            <p class="icon__text"><span>623572 3442 54+</span></p>
+          </div>
+          <div class="section__icon">
+            <img src="assets/linkedin.png" alt="Linkedin" />
+            <a href="https://www.linkedin.com/in/tomas-malleret-11015b268/">
+              <p class="icon__text"><span>Tomas Malleret</span></p>
+            </a>
+          </div>
+        </div>
+        <div class="section__divider"></div>
+        <div class="section__right">
+          <p class="important-text">
+            ¿Nescesitas de mis servicios? ¡Envíame un mensaje ahora mismo! Estoy
+            aquí para ayudarte.
+          </p>
+          <form class="contact__form">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Ingrese su nombre"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Ingrese su email"
+              required
+            />
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              placeholder="Escriba su mensaje"
+              rows="10"
+              required
+            ></textarea>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <h1>ASDAS</h1>
+    </footer>
+  </body>
+</html>
