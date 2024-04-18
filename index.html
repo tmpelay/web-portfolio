@@ -18,14 +18,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>My Portfolio</title>
+    <title>Tomas Malleret | Portfolio</title>
   </head>
   <body>
     <a href="#nav" class="up-button"><i class="bx bx-chevron-up"></i></a>
     <header id="nav" class="header">
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+          <li class="nav__item">
+            <a href="#main" class="nav__link">Inicio</a>
+          </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">Sobre mi</a>
           </li>
@@ -41,7 +43,14 @@
         </ul>
       </nav>
     </header>
-    <main id="main" class="home"></main>
+    <main id="main" class="home">
+      <img src="assets/me.jpeg" alt="Me" />
+      <div class="home__wrapper">
+        <p class="home__hi">Hola!</p>
+        <h1>Soy Tomás Malleret</h1>
+        <p class="home__profession">Desarrollador Web Front-End</p>
+      </div>
+    </main>
     <section id="about" class="section">
       <h2 class="section__title">Sobre Mi</h2>
       <div class="section__wrapper">
@@ -206,7 +215,10 @@
           </div>
           <div class="section__icon">
             <img src="assets/linkedin.png" alt="Linkedin" />
-            <a href="https://www.linkedin.com/in/tomas-malleret-11015b268/">
+            <a
+              href="https://www.linkedin.com/in/tomas-malleret-11015b268/"
+              target="_blank"
+            >
               <p class="icon__text"><span>Tomas Malleret</span></p>
             </a>
           </div>
@@ -245,7 +257,7 @@
       </div>
     </section>
     <footer class="footer">
-      <h1>ASDAS</h1>
+      <p><b>Gracias por llegar hasta acá</b>, este es el final.</p>
     </footer>
   </body>
 </html>

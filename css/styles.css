@@ -87,6 +87,57 @@ p {
   background-color: var(--secondary-background);
 }
 
+/* -- MAIN SECTION -- */
+
+.home {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.home img {
+  width: 32%;
+  min-width: 300px;
+  border-radius: 50%;
+  outline-width: 4px;
+  outline-offset: 8px;
+  outline-color: var(--secondary-foreground);
+  outline-style: solid;
+}
+
+.home__hi {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.home__profession {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5em;
+  text-wrap: balance;
+}
+
+/* -- HOME QUERIES -- */
+
+@media screen and (max-width: 900px) {
+  .home {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .home__wrapper {
+    text-align: center;
+  }
+}
+
 /* -- SECTION STYLE --*/
 
 .section {
@@ -353,6 +404,8 @@ p {
 /* -- FOOTER SECTION -- */
 
 .footer {
-  padding: 40px 60px;
+  padding: 80px 0;
   background-color: #090a06;
+  display: flex;
+  justify-content: space-evenly;
 }
