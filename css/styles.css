@@ -67,7 +67,7 @@ p {
 }
 
 .nav__wrapper input,
-label {
+.nav__wrapper label {
   display: none !important;
 }
 
