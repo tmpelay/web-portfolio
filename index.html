@@ -23,25 +23,31 @@
   <body>
     <a href="#nav" class="up-button"><i class="bx bx-chevron-up"></i></a>
     <header id="nav" class="header">
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#main" class="nav__link">Inicio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">Sobre mi</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">Habilidades</a>
-          </li>
-          <li class="nav__item">
-            <a href="#projects" class="nav__link">Proyectos</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contactame</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="nav__wrapper">
+        <input type="checkbox" id="open-menu" />
+        <label for="open-menu" class="header__nav-menu nav__link" role="button">
+          <i class="bx bx-menu"></i>
+        </label>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#main" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre mi</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Habilidades</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Proyectos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contactame</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main id="main" class="home">
       <img src="assets/me.jpeg" alt="Me" />

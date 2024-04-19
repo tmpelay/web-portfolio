@@ -60,11 +60,19 @@ p {
 
 /* -- HEADER SECTION -- */
 
-.header {
-  width: 100%;
+.nav__wrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
+}
+
+.nav__wrapper input,
+label {
+  display: none !important;
+}
+
+.nav__wrapper input:checked ~ .header__nav {
+  display: flex;
 }
 
 .nav__list {
@@ -85,6 +93,39 @@ p {
 .nav__link:hover {
   color: inherit;
   background-color: var(--secondary-background);
+}
+
+/* -- NAV QUERIES -- */
+
+@media screen and (max-width: 640px) {
+  .header__nav {
+    display: none;
+    width: 100%;
+  }
+
+  .nav__wrapper {
+    flex-direction: column;
+  }
+
+  .nav__wrapper label {
+    display: block !important;
+    text-align: center;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__link {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* -- MAIN SECTION -- */
@@ -534,6 +575,7 @@ h1 {
 
 .thanks__title {
   font-size: 3em;
+  text-align: center;
 }
 
 .thanks__text {
