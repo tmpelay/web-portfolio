@@ -252,9 +252,15 @@
             ¿Nescesitas de mis servicios? ¡Envíame un mensaje ahora mismo! Estoy
             aquí para ayudarte.
           </p>
-          <form class="contact__form">
+          <form
+            class="contact__form"
+            action="https://formsubmit.co/tmpmalleret@gmail.com.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New message" />
             <label for="name">Nombre</label>
             <input
+              name="name"
               type="text"
               id="name"
               placeholder="Ingrese su nombre"
@@ -262,13 +268,16 @@
             />
             <label for="email">Email</label>
             <input
+              name="email"
               type="email"
               id="email"
               placeholder="Ingrese su email"
               required
             />
+            <input type="hidden" name="_next" value="https://google.com" />
             <label for="message">Mensaje</label>
             <textarea
+              name="message"
               id="message"
               placeholder="Escriba su mensaje"
               rows="10"
