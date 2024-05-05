@@ -2,7 +2,7 @@
 <h1>Hi! I'm Tomás Malleret 👋</h1>
 </div>
 
-<img src="banner.png"/>
+<img src="assets/banner.png"/>
 
 
 <!--
