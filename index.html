@@ -24,6 +24,15 @@
   <body>
     <a href="#nav" class="up-button"><i class="bx bx-chevron-up"></i></a>
     <header id="nav" class="header">
+      <div class="header__theme">
+        <input type="checkbox" id="theme" />
+        <label for="theme" class="header__theme-light"
+          ><i class="bx bxs-sun"></i
+        ></label>
+        <label for="theme" class="header__theme-dark"
+          ><i class="bx bxs-moon"></i
+        ></label>
+      </div>
       <div class="nav__wrapper">
         <input type="checkbox" id="open-menu" />
         <label for="open-menu" class="header__nav-menu nav__link" role="button">
@@ -49,6 +58,7 @@
           </ul>
         </nav>
       </div>
+      <button>Change lang</button>
     </header>
     <main id="main" class="home">
       <img src="assets/me.jpeg" alt="Me" />
@@ -330,5 +340,6 @@
     <footer class="footer">
       <p><b>Gracias por llegar hasta acá</b>, este es el final.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
