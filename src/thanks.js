@@ -1,5 +1,3 @@
-const themeBtn = document.getElementById("theme");
-
 const setLightTheme = () => {
   localStorage.setItem("theme", "light");
   document.documentElement.style.setProperty("--primary-background", "#fafafa");
@@ -29,14 +27,5 @@ const setDarkTheme = () => {
 };
 
 if (localStorage.getItem("theme") == "light") {
-  themeBtn.checked = true;
   setLightTheme();
 }
-
-themeBtn.addEventListener("change", (e) => {
-  if (e.target.checked) {
-    setLightTheme();
-  } else {
-    setDarkTheme();
-  }
-});
