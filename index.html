@@ -41,35 +41,60 @@
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#main" class="nav__link">Inicio</a>
+              <a href="#main" class="nav__link es">Inicio</a>
+              <a href="#main" class="nav__link en">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">Sobre mi</a>
+              <a href="#about" class="nav__link es">Sobre mi</a>
+              <a href="#about" class="nav__link en">About</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Habilidades</a>
+              <a href="#skills" class="nav__link es">Habilidades</a>
+              <a href="#skills" class="nav__link en">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#projects" class="nav__link">Proyectos</a>
+              <a href="#projects" class="nav__link es">Proyectos</a>
+              <a href="#projects" class="nav__link en">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contactame</a>
+              <a href="#contact" class="nav__link es">Contactame</a>
+              <a href="#contact" class="nav__link en">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div></div>
+      <div class="nav__language-menu">
+        <div class="language-menu__button">
+          <img src="assets/spain.png" alt="Spanish" />
+        </div>
+        <ul class="language-menu__dropdown">
+          <li class="language-menu__item">
+            <a href="#" id="es" class="language-menu__link"
+              ><img src="assets/spain.png" alt="Spanish" />
+            </a>
+          </li>
+          <li class="language-menu__item">
+            <a href="#" id="en" class="language-menu__link"
+              ><img src="assets/united-states.png" alt="English" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main id="main" class="home">
       <img src="assets/me.jpeg" alt="Me" />
       <div class="home__wrapper">
-        <p class="home__hi">Hola!</p>
-        <h1>Soy Tomás Malleret</h1>
-        <p class="home__profession">Desarrollador Web Front-End</p>
+        <p class="home__hi es">Hola!</p>
+        <p class="home__hi en">Hi!</p>
+        <h1 class="es">Soy Tomás Malleret</h1>
+        <h1 class="en">I'm Tomás Malleret</h1>
+        <p class="home__profession es">Desarrollador Web Front-End</p>
+        <p class="home__profession en">Web Front-End Developer</p>
       </div>
     </main>
     <section id="about" class="section">
-      <h2 class="section__title">Sobre Mi</h2>
+      <h2 class="section__title es">Sobre Mi</h2>
+      <h2 class="section__title en">About Me</h2>
       <div class="section__wrapper">
         <div class="section__left">
           <div class="section__icon">
@@ -99,14 +124,20 @@
             />
             <label class="about__nav-item" for="profile">Perfil</label>
             <input class="about__radio" type="radio" name="about" id="story" />
-            <label class="about__nav-item" for="story">Mi historia</label>
+            <label class="about__nav-item es" for="story">Mi historia</label>
+            <label class="about__nav-item en" for="story">My history</label>
             <div class="about__profile-text">
-              <p class="important-text">
+              <p class="important-text es">
                 Hola, soy Tomás Malleret, un entusiasta de la programación
                 nacido en Buenos Aires, Argentina, y actualmente resido en
                 Concepción del Uruguay, Entre Ríos.
               </p>
-              <p>
+              <p class="important-text en">
+                Hi, I'm Tomás Malleret, a programming enthusiast born in Buenos
+                Aires, Argentina, and currently residing in Concepción del
+                Uruguay, Entre Ríos.
+              </p>
+              <p class="es">
                 Me he sumergido en el mundo de la programación desde muy joven,
                 guiándome por mi cuenta. Soy un programador web Front-End con
                 aspiraciones a ser Full-Stack. Mi pasión por esta profesión me
@@ -117,9 +148,19 @@
                 a los años dedicados a aprender y desarrollar mi flexibilidad en
                 este ámbito.
               </p>
+              <p class="en">
+                I have immersed myself in the world of programming from a very
+                young age, self-taught. I am a Front-End web developer with
+                aspirations to become Full-Stack. My passion for this profession
+                has led me to develop a deep understanding of the field. Right
+                now, I am seeking real-world experience to kickstart my
+                professional career. I highlight my ability to quickly
+                specialize in any technology presented to me, thanks to years of
+                learning and developing my flexibility in this field.
+              </p>
             </div>
             <div class="about__story-text">
-              <p class="important-text">
+              <p class="important-text es">
                 Nací el 26 de junio de 2004 en Buenos Aires, Argentina, pero mi
                 familia se mudó a Entre Ríos, allí estudié en la Escuela de
                 Educación Técnica N°2 "Francisco Ramírez", donde nació mi pasión
@@ -128,7 +169,16 @@
                 adentré en la programación lógica con Java, lo que desarrolló mi
                 pensamiento lógico como programador.
               </p>
-              <p>
+              <p class="important-text en">
+                I was born on June 26, 2004 in Buenos Aires, Argentina, but my
+                family moved to Entre Ríos, where I studied at the Technical
+                Education School No. 2 "Francisco Ramírez," where my passion for
+                programming was born. I started programming on my own at the age
+                of 13, initially creating video games. Over time, I delved into
+                logical programming with Java, which developed my logical
+                thinking as a programmer.
+              </p>
+              <p class="es">
                 Aprendí Programación Orientada a Objetos y diversas áreas como
                 la programación web, donde conocí HTML, CSS y JavaScript, y más
                 tarde aprendí tecnologías como NodeJS y ReactJS para desarrollar
@@ -138,10 +188,24 @@
                 programación de gráficos en tres dimensiones con OpenGL y
                 Vulkan.
               </p>
-              <p>
+              <p class="en">
+                I learned Object-Oriented Programming and various areas such as
+                web programming, where I learned HTML, CSS, and JavaScript, and
+                later I learned technologies like NodeJS and ReactJS to develop
+                Full-Stack applications. I also explored SQL and noSQL databases
+                and created my first APIs. Over the past 7 years, I have
+                explored niches like Python, Artificial Intelligence, C++, and
+                three-dimensional graphics programming with OpenGL and Vulkan.
+              </p>
+              <p class="es">
                 Hoy, con 20 años, siento que la programación es una extensión de
                 mí mismo, aunque sé que aún tengo mucho por aprender y estoy
                 emocionado por adquirir más experiencia en el futuro.
+              </p>
+              <p class="en">
+                Today, at 20 years old, I feel that programming is an extension
+                of myself, although I know I still have much to learn, and I am
+                excited to gain more experience in the future.
               </p>
             </div>
           </div>
@@ -149,7 +213,8 @@
       </div>
     </section>
     <section id="skills" class="section">
-      <h2 class="section__title">Mis Habilidades</h2>
+      <h2 class="section__title es">Mis Habilidades</h2>
+      <h2 class="section__title en">My Skills</h2>
       <div class="section__wrapper">
         <div class="section__left">
           <div class="section__icon">
@@ -222,7 +287,8 @@
             </div>
           </div>
           <div class="skills__other">
-            <h2 class="skills__other-title">Otras Habilidades</h2>
+            <h2 class="skills__other-title es">Otras Habilidades</h2>
+            <h2 class="skills__other-title en">Other Skills</h2>
             <div class="skills__other-icons">
               <div class="skill__wrapper">
                 <img src="assets/git-icon.png" alt="Git icon" />
@@ -234,13 +300,18 @@
       </div>
     </section>
     <section id="projects" class="section">
-      <h2 class="section__title">Mis Proyectos</h2>
+      <h2 class="section__title es">Mis Proyectos</h2>
+      <h2 class="section__title en">My Projects</h2>
       <div class="section__wrapper">
         <div class="section__left"></div>
         <div class="section__right">
-          <p class="important-text">
+          <p class="important-text es">
             Aca podes ver una lista de los proyectos en los que he trabajado
             utilizando las habilidades mostradas anteriormente.
+          </p>
+          <p class="important-text en">
+            Here you can see a list of the projects I have worked on using the
+            skills shown above.
           </p>
         </div>
       </div>
@@ -306,7 +377,8 @@
       </div>
     </section>
     <section id="contact" class="section">
-      <h2 class="section__title">Contactame</h2>
+      <h2 class="section__title es">Contactame</h2>
+      <h2 class="section__title en">Contact Me</h2>
       <div class="section__wrapper">
         <div class="section__left">
           <div class="section__icon">
@@ -330,9 +402,13 @@
           </div>
         </div>
         <div class="section__right">
-          <p class="important-text">
+          <p class="important-text es">
             ¿Nescesitas de mis servicios? ¡Envíame un mensaje ahora mismo! Estoy
             aquí para ayudarte.
+          </p>
+          <p class="important-text en">
+            Do you need my services? Send me a message right now! I'm here to
+            help you.
           </p>
           <form
             class="contact__form"
@@ -349,7 +425,8 @@
               name="redirect"
               value="https://tmpelay.github.io/web-portfolio/thanks.html"
             />
-            <label for="name">Nombre</label>
+            <label for="name" class="es">Nombre</label>
+            <label for="name" class="en">Name</label>
             <input
               name="name"
               type="text"
@@ -365,7 +442,8 @@
               placeholder="Ingrese su email"
               required
             />
-            <label for="message">Mensaje</label>
+            <label for="message" class="es">Mensaje</label>
+            <label for="message" class="en">Message</label>
             <textarea
               name="message"
               id="message"
@@ -373,13 +451,15 @@
               rows="10"
               required
             ></textarea>
-            <input type="submit" value="Enviar" />
+            <button type="submit" class="es">Enviar</button>
+            <button type="submit" class="en">Send</button>
           </form>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <p><b>Gracias por llegar hasta acá</b>, este es el final.</p>
+      <p class="es"><b>Gracias por llegar hasta acá</b>, este es el final.</p>
+      <p class="en"><b>Thank you for watch</b>, this is the end.</p>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -1,5 +1,43 @@
 const themeBtn = document.getElementById("theme");
 
+const esBtn = document.getElementById("es");
+const enBtn = document.getElementById("en");
+
+const setLanguage = (lang) => {
+  localStorage.setItem("lang", lang);
+  const elements = document.getElementsByClassName(lang);
+
+  if (lang == "es") {
+    const other = document.getElementsByClassName("en");
+    for (let e of other) {
+      e.style.display = "none";
+    }
+  } else if (lang == "en") {
+    const other = document.getElementsByClassName("es");
+    for (let e of other) {
+      e.style.display = "none";
+    }
+  }
+
+  for (let e of elements) {
+    e.style.display = "block";
+  }
+};
+
+if (localStorage.getItem("lang") == "en") {
+  setLanguage("en");
+} else {
+  setLanguage("es");
+}
+
+esBtn.addEventListener("click", () => {
+  setLanguage("es");
+});
+
+enBtn.addEventListener("click", () => {
+  setLanguage("en");
+});
+
 const setLightTheme = () => {
   localStorage.setItem("theme", "light");
   document.documentElement.style.setProperty("--primary-background", "#fafafa");
