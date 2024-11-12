@@ -88,8 +88,8 @@
         <p class="home__hi en">Hi!</p>
         <h1 class="es">Soy Tomás Malleret</h1>
         <h1 class="en">I'm Tomás Malleret</h1>
-        <p class="home__profession es">Desarrollador Web Front-End</p>
-        <p class="home__profession en">Web Front-End Developer</p>
+        <p class="home__profession es">Desarrollador Web</p>
+        <p class="home__profession en">Web Developer</p>
       </div>
     </main>
     <section id="about" class="section">
@@ -139,9 +139,8 @@
               </p>
               <p class="es">
                 Me he sumergido en el mundo de la programación desde muy joven,
-                guiándome por mi cuenta. Soy un programador web Front-End con
-                aspiraciones a ser Full-Stack. Mi pasión por esta profesión me
-                ha llevado a desarrollar un profundo entendimiento del campo. En
+                guiándome por mi cuenta. Mi pasión por esta profesión me ha
+                llevado a desarrollar un profundo entendimiento del campo. En
                 este momento, estoy buscando experiencia real para iniciar mi
                 carrera profesional. Destaco mi capacidad para especializarme
                 rápidamente en cualquier tecnología que se me presente, gracias
@@ -150,13 +149,12 @@
               </p>
               <p class="en">
                 I have immersed myself in the world of programming from a very
-                young age, self-taught. I am a Front-End web developer with
-                aspirations to become Full-Stack. My passion for this profession
-                has led me to develop a deep understanding of the field. Right
-                now, I am seeking real-world experience to kickstart my
-                professional career. I highlight my ability to quickly
-                specialize in any technology presented to me, thanks to years of
-                learning and developing my flexibility in this field.
+                young age, self-taught. My passion for this profession has led
+                me to develop a deep understanding of the field. Right now, I am
+                seeking real-world experience to kickstart my professional
+                career. I highlight my ability to quickly specialize in any
+                technology presented to me, thanks to years of learning and
+                developing my flexibility in this field.
               </p>
             </div>
             <div class="about__story-text">
@@ -219,27 +217,38 @@
         <div class="section__left">
           <div class="section__icon">
             <img src="assets/spain.png" alt="Spanish" />
-            <p class="icon__text">
+            <p class="icon__text es">
               <span class="sction__icon-medium">Español</span><br />
               Nativo
+            </p>
+            <p class="icon__text en">
+              <span class="sction__icon-medium">Spanish</span><br />
+              Native
             </p>
           </div>
           <div class="section__icon">
             <img src="assets/united-states.png" alt="English" />
-            <p class="icon__text">
+            <p class="icon__text es">
               <span class="sction__icon-medium">Ingles</span><br />
               Basico / Intermedio
+            </p>
+            <p class="icon__text en">
+              <span class="sction__icon-medium">English</span><br />
+              Basic / Intermediate
             </p>
           </div>
           <div class="section__icon">
             <img src="assets/japan.png" alt="Japan" />
-            <p class="icon__text">
+            <p class="icon__text es">
               <span class="sction__icon-medium">Japones</span><br />
               Principiante
             </p>
+            <p class="icon__text en">
+              <span class="sction__icon-medium">Japanese</span><br />
+              Beginner
+            </p>
           </div>
         </div>
-
         <div class="section__right">
           <div class="skills__nav-container">
             <input
@@ -250,6 +259,15 @@
               checked
             />
             <label class="skills__nav-item" for="web">Web</label>
+            <input
+              class="skills__radio"
+              type="radio"
+              name="skills"
+              id="db"
+              checked
+            />
+            <label class="skills__nav-item es" for="db">Bases de datos</label>
+            <label class="skills__nav-item en" for="db">Databases</label>
             <div class="skills__web">
               <div class="skills__web-basic">
                 <div class="skill__wrapper">
@@ -285,6 +303,33 @@
                 </div>
               </div>
             </div>
+            <div class="skills__db">
+              <div class="skills__db-sql">
+                <p class="skills__title">SQL</p>
+                <div class="db-sql__wrapper">
+                  <div class="skill__wrapper">
+                    <img
+                      src="assets/postgresql-icon.png"
+                      alt="PostgreSQL icon"
+                    />
+                    <p>PostgreSQL</p>
+                  </div>
+                  <div class="skill__wrapper">
+                    <img src="assets/mysql-icon.png" alt="MySQL icon" />
+                    <p>MySQL</p>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__db-nosql">
+                <p class="skills__title">noSQL</p>
+                <div class="db-sql__wrapper">
+                  <div class="skill__wrapper">
+                    <img src="assets/mongodb-icon.png" alt="MongoDB icon" />
+                    <p>MongoDB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="skills__other">
             <h2 class="skills__other-title es">Otras Habilidades</h2>
@@ -293,6 +338,10 @@
               <div class="skill__wrapper">
                 <img src="assets/git-icon.png" alt="Git icon" />
                 <p>Git</p>
+              </div>
+              <div class="skill__wrapper">
+                <img src="assets/prisma-icon.png" alt="Prisma icon" />
+                <p>Prisma ORM</p>
               </div>
             </div>
           </div>
