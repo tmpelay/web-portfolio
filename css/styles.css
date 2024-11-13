@@ -402,7 +402,8 @@ h1 {
 }
 
 .skills__web,
-.skills__db {
+.skills__db,
+.skills__code {
   display: none;
   width: 100%;
   margin: 10px 0;
@@ -431,7 +432,11 @@ h1 {
   display: block;
 }
 
-.skills__radio:nth-of-type(2):checked ~ .skills__db {
+.skills__radio:nth-of-type(2):checked ~ .skills__code {
+  display: flex;
+}
+
+.skills__radio:nth-of-type(3):checked ~ .skills__db {
   display: block;
 }
 
@@ -458,6 +463,15 @@ h1 {
   margin: 30px 0;
   position: relative;
   border: 2px solid #44a135;
+  border-radius: 20px;
+}
+
+.skills__code {
+  justify-content: space-around;
+  padding: 25px 0 18px;
+  margin: 30px 0;
+  position: relative;
+  border: 2px solid #ffce39;
   border-radius: 20px;
 }
 
